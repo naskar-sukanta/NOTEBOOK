@@ -8,3 +8,12 @@ git clone https://github.com/daveprowse/tac-course
 
 # Install terraform auto-complete
 terraform -install-autocomplete
+
+# VS code extensions
+- terraform syntax highlighting
+- HashiCorp HCL
+- markdown preview github styling
+- peacock for VS code
+
+
+
