@@ -15,5 +15,9 @@ terraform -install-autocomplete
 - markdown preview github styling
 - peacock for VS code
 
+# Terraform Docs
+https://developer.hashicorp.com/terraform/docs
+
+
 
 
