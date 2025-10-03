@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  webapp:
+    build: ./app
+    container_name: webapp
+    restart: unless-stopped
+    ports:
+      - "80:5000"
+    environment:
+      - MONGODB_URI=mongodb://${MONGO_ROOT_USERNAME}:${MONGO_ROOT_PASSWORD}@mongodb:27017/${MONGO_DATABASE}?authSource=admin
+    networks:
+      - ubuntu_app-network 
+
+networks:
+  ubuntu_app-network:
+    external: true   # tells Compose to use an existing network
