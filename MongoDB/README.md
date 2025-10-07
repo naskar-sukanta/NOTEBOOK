@@ -9,6 +9,7 @@ docker-compose -f docker-compose-mongodb.yml logs mongodb
 
 # Test MongoDB connection directly
 docker exec -it mongodb mongosh -u admin -p Sukanta2025 --authenticationDatabase admin
+docker exec -it mongodb mongosh -u admin -p rptuser2025 -host 13.61.144.134
 
 # Backup MongoDB data
 docker exec mongodb sh -c 'mongodump --uri="mongodb://admin:Sukanta2025@localhost:27017" --archive' > backup.archive
