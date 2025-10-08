@@ -11,6 +11,7 @@ docker-compose -f docker-compose-mongodb.yml logs mongodb
 docker exec -it mongodb mongosh -u admin -p Sukanta2025 --authenticationDatabase admin
 
 docker exec -it mongodb mongosh -u admin -p rptuser2025 -host 13.61.144.134
+
 docker exec -it mongodb mongosh "mongodb://admin:Sukanta2025@15.206.70.111:27017/testdb?authSource=admin"
 
 # Test MongoDB connection directly w/o using docker
